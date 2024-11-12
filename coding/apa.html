@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>how's youre day?</h1>
+    <iframe
+      src="https://i.pinimg.com/originals/f8/0d/d9/f80dd95f8b4b8102cbd932f7cc03c6c2.gif"
+      width="400"
+      height="400"
+      frameborder="0"
+      class="giphy-embed"
+      allowfullscreen
+    ></iframe>
+    <h1>SEMOGA SELALU BAIK BAIK AJA YAA!!</h1>
+    <button id="btn_mau" onclick="alert('gitu dong')">yapp</button>&nbsp;
+    <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">
+      Ga
+    </button>
+  </body>
+  <script>
+    function gamau(id) {
+      var mau = document.getElementById("btn_mau");
+      var i = Math.floor(Math.random() * 300) + 1;
+      var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+      id.style.left = i + "px";
+      id.style.top = j + "px";
+    }
+  </script>
+</html>

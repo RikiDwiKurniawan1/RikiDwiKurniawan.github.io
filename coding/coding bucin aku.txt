@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucin Lucu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #e63946;
+        }
+        .bucin-message {
+            font-size: 1.5em;
+            margin: 20px;
+            padding: 20px;
+            border: 2px dashed #f1faee;
+            background-color: #a8dadc;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #457b9d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>hy</h1>
+    <div class="bucin-message" id="message">Kamu adalah segalanya bagiku!</div>
+    <button class="button" onclick="generateMessage()">Ungkapkan Cinta!</button>
+
+    <script>
+        const messages = [
+            "hy",
+            "km.",
+            "sk",
+            "ak g.",
+            "yh bye"
+        ];
+
+        function generateMessage() {
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            document.getElementById('message').innerText = messages[randomIndex];
+        }
+    </script>
+
+</body>
+</html>
